@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/tool"
+            layout="@layout/note_tool" />
+
+        <EditText
+            android:id="@+id/editTextData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tool"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="left"
+            android:text="Enter text here" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/editTextData"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+
+            android:layout_below="@+id/editTextData"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+</layout>
